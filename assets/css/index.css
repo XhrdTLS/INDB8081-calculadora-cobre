@@ -1,0 +1,106 @@
+/* Importaciones */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap");
+
+/* Configuraciones Globales */
+:root {
+  --fondo: #F8EDE3;
+  --blanco: #f1f1f1;
+  --oscuro: #000606;
+  --gris: #797979;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+body {
+  background-color: var(--fondo);
+  font-size: 1.6rem;
+  line-height: 1.8;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+/* Menu Lateral */
+aside {
+  background-color: var(--oscuro);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 18%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+
+}
+
+.menu__header{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu__container {
+  color: var(--blanco);
+  list-style: none;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.logo {
+  background-color: var(--blanco);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+.grupo {
+  background-color: var(--blanco);
+  color: #E65F2B;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.integrantes {
+  color: var(--blanco);
+  list-style: none;
+  padding-left: 15px;
+}
+
+/* Contenedor Principal */
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 82%;
+  height: 100vh;
+  padding: 5rem;
+}
+
+.ingreso-datos{
+ padding-top: 20px;
+}
