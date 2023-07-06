@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="./assets/css/index.css" />
+  <script defer src="./assets/js/index.js"></script>
 </head>
 
 <body>
@@ -21,6 +22,41 @@
     <div class="ingreso-datos">
       <h2>Ingresar</h2>
       <p>Toneladas de mineral sulfurado</p>
+      <div class="input-frame">
+        <span></span>
+        <input id="input" placeholder="Ingresa la cantidad"/>
+      </div>
+    </div>
+    <div class="resultados-container">
+      <h2>Resultados</h2>
+      <div class="resultados-cards">
+        <div class="resultado">
+          <p>Toneladas de Cobre Fino</p>
+          <span id="cobre-fino">0000</span>
+          <span class="unit">kg</span>
+        </div>
+        <div class="resultado">
+          <p>Algo más</p>
+          <span id="nose">0000</span>
+          <span class="unit">ton</span>
+        </div>
+        <div class="resultado">
+          <p>Unidades de Ánodos</p>
+          <span id="anodos">0000</span>
+          <span class="unit">unidades</span>
+        </div>
+        <div class="resultado">
+          <p>Unidades de Cátodos</p>
+          <span id="catodos">0000</span>
+          <span class="unit">unidades</span>
+        </div>
+      </div>
+      <div class="resultados-huellas">
+        <div class="resultado">
+        </div>
+        <div class="resultado">
+        </div>
+      </div>
     </div>
   </div>
   <!--Menu-->
