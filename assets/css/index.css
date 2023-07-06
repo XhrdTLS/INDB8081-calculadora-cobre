@@ -4,9 +4,12 @@
 /* Configuraciones Globales */
 :root {
   --fondo: #F8EDE3;
+  --fondo-secu: #FFFFFF57;
   --blanco: #f1f1f1;
   --oscuro: #000606;
   --gris: #797979;
+  --text: #060606;
+  --text-secu: #06060666;
 }
 
 html {
@@ -73,8 +76,14 @@ aside {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 20px 40px;
   gap: 10px;
+}
+
+.logo > p {
+  color: #00417B;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .grupo {
@@ -141,7 +150,7 @@ main > h1 {
 }
 
 .ingreso-datos > p {
-  color: #797979;
+  color: var(--griss);
   font-size: 24px;
 }
 
@@ -162,7 +171,7 @@ main > h1 {
   height: 196px;
   border-radius: 14px;
   padding: 18px 43px 24px 18px;
-  background: #FFFFFF57;
+  background: var(--fondo-secu);
 }
 
 .resultado > p {
@@ -195,10 +204,18 @@ main > h1 {
   height: 337px;
   border-radius: 14px;
   padding: 18px 43px 24px 18px;
-  background: #FFFFFF57;
+  background: var(--fondo-secu);
 }
 
 .huella-card > p {
   text-align: center;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.huella-card > span {
+  position: absolute;
+  margin: -200px 155px;
+  font-size: 28px;
   font-weight: 500;
 }
