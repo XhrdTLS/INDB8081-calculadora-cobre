@@ -98,7 +98,7 @@ aside {
   flex-direction: column;
   width: 82%;
   height: 100vh;
-  padding: 5rem;
+  padding: 2rem 5rem;
 }
 
 .ingreso-datos {
@@ -170,12 +170,17 @@ main > h1 {
 }
 
 .resultado > span {
+  display: inline-block;
   font-size: 28px;
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 240px;
 }
 
 .unit {
   font-size: 18px !important;
+  margin-bottom: 6px;
 }
 
 .resultados-huellas {
@@ -183,4 +188,17 @@ main > h1 {
   gap: 20px;
   padding-top: 30px;
   justify-content: center;
+}
+
+.huella-card {
+  width: 390px;
+  height: 337px;
+  border-radius: 14px;
+  padding: 18px 43px 24px 18px;
+  background: #FFFFFF57;
+}
+
+.huella-card > p {
+  text-align: center;
+  font-weight: 500;
 }

@@ -11,7 +11,7 @@ const anodos = document.getElementById("anodos");
 const catodos = document.getElementById("catodos");
 
 function calc() {
-    cobreFino.innerText = (input.value * 0.012).roundTo(2);
+    cobreFino.innerText = (input.value * 0.012).roundTo(3);
     algoMas.innerText = input.value;
     anodos.innerText = (input.value / 0.2425).roundTo(2);
     catodos.innerText = (input.value / 0.75).roundTo(2);
