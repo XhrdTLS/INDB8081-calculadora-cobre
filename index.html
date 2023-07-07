@@ -8,6 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="./assets/css/index.css" />
   <script defer src="./assets/js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -31,21 +32,19 @@
       <h2>Resultados</h2>
       <div class="resultados-cards">
         <div class="resultado">
+          <img src="./assets/images/copper.svg">
           <p>Toneladas de Cobre Fino</p>
           <span id="cobre-fino">0000</span>
           <span class="unit">ton</span>
         </div>
         <div class="resultado">
-          <p>Algo más</p>
-          <span id="nose">0000</span>
-          <span class="unit">ton</span>
-        </div>
-        <div class="resultado">
+          <img src="./assets/images/anodo.svg">
           <p>Unidades de Ánodos</p>
           <span id="anodos">0000</span>
           <span class="unit">unidades</span>
         </div>
         <div class="resultado">
+          <img src="./assets/images/catodo.svg">
           <p>Unidades de Cátodos</p>
           <span id="catodos">0000</span>
           <span class="unit">unidades</span>
@@ -53,15 +52,11 @@
       </div>
       <div class="resultados-huellas">
         <div class="huella-card">
-          <p>Huella Hídrica</p>
-          <img src="./assets/images/meter.svg">
-          <span id="hidrica">0%</span>
-        </div>
-        <div class="huella-card">
           <p>Huella de Carbono</p>
           <img src="./assets/images/meter.svg">
           <span id="carbono">0%</span>
         </div>
+        <canvas id="chart" style="width:800px; height:300px"></canvas>
       </div>
     </div>
   </div>
