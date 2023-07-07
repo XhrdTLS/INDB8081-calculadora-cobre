@@ -9,11 +9,14 @@ const cobreFino = document.getElementById("cobre-fino");
 const algoMas = document.getElementById("nose");
 const anodos = document.getElementById("anodos");
 const catodos = document.getElementById("catodos");
+const carbono = document.getElementById("carbono");
+const hidrica = document.getElementById("hidrica");
 
 function calc() {
     cobreFino.innerText = (input.value * 0.012).roundTo(3);
-    algoMas.innerText = input.value;
+    algoMas.innerText = (input.value * 1);
     anodos.innerText = (input.value / 0.2425).roundTo(2);
     catodos.innerText = (input.value / 0.75).roundTo(2);
+    carbono.innerText = `${(input.value * 0.051).roundTo(2)}%`; // * 0.084 | 7ton
 }
 calc();

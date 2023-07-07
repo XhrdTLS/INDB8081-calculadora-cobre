@@ -111,7 +111,7 @@ aside {
 }
 
 .ingreso-datos {
- padding-top: 20px;
+  padding-top: 20px;
 }
 
 .input-frame {
@@ -126,20 +126,20 @@ aside {
 }
 
 .input-frame > span {
-    height: 22px;
-    width: 22px;
+  height: 22px;
+  width: 22px;
 }
 
 #input {
-  border: none;
-  display: flex;
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
-  color: #060606;
+border: none;
+display: flex;
+font-family: "Inter", sans-serif;
+font-size: 20px;
+color: #060606;
 }
 
 #input:focus-visible {
-  outline: none;
+outline: none;
 }
 main > h1 {
   font-size: 64px
@@ -201,7 +201,7 @@ main > h1 {
 
 .huella-card {
   width: 390px;
-  height: 337px;
+  height: 280px;
   border-radius: 14px;
   padding: 18px 43px 24px 18px;
   background: var(--fondo-secu);
@@ -213,9 +213,14 @@ main > h1 {
   margin-bottom: 15px;
 }
 
-.huella-card > span {
+.huella-card > img {
   position: absolute;
-  margin: -200px 155px;
+}
+
+.huella-card > span {
   font-size: 28px;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  margin: 120px 0px 0px 30px;
 }
